@@ -1,11 +1,10 @@
-import TodoList from "./components/TodoList";
-import { initialTodos } from "./data";
+import TodoApp from "./components/TodoApp";
 
 export default function Home() {
   return (
     <main>
       <h1>Todo list</h1>
-      <TodoList todos={initialTodos} />
+      <TodoApp />
     </main>
   );
 }
