@@ -1,16 +1,33 @@
-type DialogPropts = {
+// dialog wielokrotnego użytku: potwierdzenie usuwania i formularz dodawania/edycji
+type DialogProps = {
   title: string;
   onClose: () => void;
   children: React.ReactNode;
 };
 
-export default function Dialog({ title, onClose, children }: DialogPropts) {
+export default function Dialog({ title, onClose, children }: DialogProps) {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black/50">
-      <div className="w-full max-w-md rounded bg-white p-4 text-black">
-        <h2>{title}</h2>
+    // ciemne tło na całej stronie
+    <div className="dialog-backdrop">
+      <div
+        className="dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title"
+      >
+        <div className="dialog-header">
+          <h2 id="dialog-title">{title}</h2>
+          <button
+            type="button"
+            className="dialog-close"
+            aria-label="Zamknij"
+            onClick={onClose}
+          >
+            ×
+          </button>
+        </div>
+        {/* to, co rodzic wstawi do środka */}
         {children}
-        <button onClick={() => onClose()}>Close</button>
       </div>
     </div>
   );

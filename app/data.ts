@@ -1,9 +1,10 @@
 import { Todo } from "./types";
 
+// 12 zadań na start, żeby dało się sprawdzić paginację (5 na stronę)
 export const initialTodos: Todo[] = [
   {
     id: 1,
-    title: "Buy milk",
+    title: "Kupić mleko",
     priority: "low",
     category: "home",
     dueDate: "2026-11-05",
@@ -11,7 +12,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 2,
-    title: "Finish math homework",
+    title: "Skończyć zadanie domowe z matematyki",
     priority: "high",
     category: "study",
     dueDate: "2026-10-30",
@@ -19,7 +20,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 3,
-    title: "Send report to manager",
+    title: "Wysłać raport do kierownika",
     priority: "high",
     category: "work",
     dueDate: "2026-10-28",
@@ -27,7 +28,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 4,
-    title: "Buy bread",
+    title: "Kupić chleb",
     priority: "low",
     category: "home",
     dueDate: "2026-11-02",
@@ -35,7 +36,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 5,
-    title: "Learn React hooks",
+    title: "Nauczyć się hooków w React",
     priority: "medium",
     category: "study",
     dueDate: "2026-11-12",
@@ -43,7 +44,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 6,
-    title: "Clean the kitchen",
+    title: "Posprzątać kuchnię",
     priority: "medium",
     category: "home",
     dueDate: "2026-11-01",
@@ -51,7 +52,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 7,
-    title: "Prepare team meeting",
+    title: "Przygotować spotkanie zespołu",
     priority: "medium",
     category: "work",
     dueDate: "2026-11-08",
@@ -59,7 +60,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 8,
-    title: "Read chapter 5 of biology book",
+    title: "Przeczytać 5. rozdział podręcznika do biologii",
     priority: "low",
     category: "study",
     dueDate: "2026-11-20",
@@ -67,7 +68,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 9,
-    title: "Fix bug in login form",
+    title: "Naprawić błąd w formularzu logowania",
     priority: "high",
     category: "work",
     dueDate: "2026-10-29",
@@ -75,7 +76,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 10,
-    title: "Call grandma",
+    title: "Zadzwonić do babci",
     priority: "medium",
     category: "home",
     dueDate: "2026-11-15",
@@ -83,7 +84,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 11,
-    title: "Buy birthday gift",
+    title: "Kupić prezent urodzinowy",
     priority: "high",
     category: "home",
     dueDate: "2026-11-03",
@@ -91,7 +92,7 @@ export const initialTodos: Todo[] = [
   },
   {
     id: 12,
-    title: "Write essay about history",
+    title: "Napisać wypracowanie o historii",
     priority: "low",
     category: "study",
     dueDate: "2026-12-01",
